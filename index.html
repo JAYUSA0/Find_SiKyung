@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!-- 배경 이미지 -->
+<img id="bgImage" src="https://raw.githubusercontent.com/JAYUSA0/bgm/main/썸네일%20복사.png" alt="배경">
+
+<h1>시굥찾기</h1>
+
+<div style="margin-bottom:10px">
+ 💣 <span class="text-outline">남은 지뢰 :</span>
+ <span id="mineCount" class="text-outline"></span>
+ ⏱️ <span id="timer" class="text-outline">0</span>
+ <span class="text-outline">초</span>
+ <button onclick="restart()">🔄 재시작</button>
+</div>
+
+<div style="margin-bottom:10px">
+  <span class="text-outline">🔊 볼륨</span>
+  <input type="range" min="0" max="100" value="40" oninput="changeVolume(this.value)" />
+</div>
+
+<div id="game"></div>
+
+<audio id="bgm" loop></audio>
+
+<div style="margin-bottom:10px">
+  <button onclick="setDifficulty('easy')">🟢 초급</button>
+  <button onclick="setDifficulty('normal')">🟡 중급</button>
+  <button onclick="setDifficulty('hard')">🔴 고급</button>
+</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
